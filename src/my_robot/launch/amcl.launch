@@ -6,6 +6,8 @@
 
 	<!-- AMCL Node -->
   	<node name="amcl" pkg="amcl" type="amcl" output="screen">
+		<param name="laser_model_type" value="likelihood_field"/>
+		<param name="laser_likelihood_max_dist" value="2.0"/>
 		<param name="odom_frame_id" value="odom"/>
 		<param name="odom_model_type" value="diff-corrected"/>
 		<param name="odom_alphas" value="3"/>
